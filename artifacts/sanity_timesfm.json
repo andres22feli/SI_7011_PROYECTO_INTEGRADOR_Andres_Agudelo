@@ -1,0 +1,9 @@
+{
+ "init_mse": 0.9930402040481567,
+ "grad_all_finite": true,
+ "grad_zero_layers": [],
+ "grad_n_layers": 162,
+ "overfit_loss": 0.04457475617527962,
+ "overfit_steps": 21,
+ "eval_deterministic": true
+}

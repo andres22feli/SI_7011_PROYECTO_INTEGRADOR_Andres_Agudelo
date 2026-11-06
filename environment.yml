@@ -1,0 +1,25 @@
+name: dl_bp
+channels: [defaults]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Versiones con las que se ejecutó el proyecto (Windows, RTX 4060, CUDA 12.4).
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - torch==2.6.0+cu124
+      - torchvision==0.21.0+cu124
+      - numpy==2.4.6
+      - scipy==1.17.1
+      - pandas==3.1.0
+      - scikit-learn==1.9.1
+      - matplotlib==3.11.2
+      - tabulate==0.10.0          # DataFrame.to_markdown (notebook 06)
+      - mlflow==3.18.0
+      - jupyter==1.1.1
+      - ipykernel==7.4.0
+      - nbconvert==7.17.2
+      - pytest==9.2.0
+      - transformers==5.22.1      # TimesFm2_5Model solo existe en versiones recientes
+      - peft==0.21.2
+      - accelerate==1.15.0
+      - huggingface_hub==2.4.0

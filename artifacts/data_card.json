@@ -1,0 +1,140 @@
+{
+  "dataset": "MIMIC-BP",
+  "doi": "10.7910/DVN/DBM1NF",
+  "subject_ids_sha256": "6b8d88e209a442aee73b84e815e830898eacd4c5b6a64b1534b33e6003e2693e",
+  "n_subjects_listed": 1524,
+  "n_subjects_kept": 1524,
+  "n_segments_valid": 45690,
+  "n_segments_dropped": 30,
+  "excluded_subjects": [],
+  "policy": {
+    "invalid_segment": "descartar el segmento",
+    "min_valid_segments_per_patient": 15
+  },
+  "duplicates": {
+    "drop_segments": {
+      "p042858": [
+        14,
+        17,
+        25,
+        26,
+        28
+      ],
+      "p062561": [
+        4,
+        22,
+        23,
+        24,
+        27,
+        29
+      ],
+      "p083120": [
+        3
+      ],
+      "p085508": [
+        13,
+        15,
+        17,
+        18,
+        20,
+        22,
+        25,
+        26,
+        29
+      ],
+      "p090269": [
+        17,
+        18,
+        20,
+        21,
+        22,
+        24,
+        26,
+        27,
+        29
+      ]
+    },
+    "n_segments_dropped": 30,
+    "cross_patient_duplicates": {
+      "p083120": [
+        "p072885"
+      ]
+    },
+    "n_patients_with_cross_duplicates": 1
+  },
+  "label_descriptives_mmHg": {
+    "pas": {
+      "mean": 112.81552124023438,
+      "std": 17.83379364013672,
+      "min": 63.79999923706055,
+      "max": 185.8000030517578,
+      "p5": 85.9000015258789,
+      "p95": 143.8000030517578
+    },
+    "pad": {
+      "mean": 58.44516372680664,
+      "std": 12.258400917053223,
+      "min": 31.100000381469727,
+      "max": 115.5999984741211,
+      "p5": 40.79999923706055,
+      "p95": 80.69999694824219
+    }
+  },
+  "contract": {
+    "signal_shape": [
+      30,
+      3750
+    ],
+    "label_shape": [
+      30,
+      2
+    ],
+    "min_std": 1e-06,
+    "pas_range": [
+      50.0,
+      250.0
+    ],
+    "pad_range": [
+      20.0,
+      150.0
+    ],
+    "min_valid_segments": 15
+  },
+  "inputs_allowed": [
+    "ppg",
+    "ecg"
+  ],
+  "abp_used_as_input": false,
+  "split": {
+    "train": {
+      "n_subjects": 914,
+      "n_segments": 27396
+    },
+    "val": {
+      "n_subjects": 305,
+      "n_segments": 9149
+    },
+    "test": {
+      "n_subjects": 305,
+      "n_segments": 9145
+    }
+  },
+  "split_seed": 0,
+  "preprocessing": {
+    "filters": {
+      "order": 4,
+      "ppg_band_hz": [
+        0.5,
+        8.0
+      ],
+      "ecg_band_hz": [
+        0.5,
+        40.0
+      ],
+      "zero_phase": true,
+      "fs": 125
+    },
+    "input_norm": "z-score por segmento (por instancia)",
+    "label_norm": "z-score con media/DE de train"
+  }
+}

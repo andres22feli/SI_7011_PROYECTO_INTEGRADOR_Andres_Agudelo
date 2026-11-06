@@ -1,0 +1,110 @@
+{
+ "run_name": "mlp_ppg",
+ "builder": "build_mlp",
+ "inputs": [
+  "ppg"
+ ],
+ "model_kw": {},
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "epochs": 30,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 1024,
+  "amp": false,
+  "micro_batch": null
+ },
+ "best_epoch": 3,
+ "best_val_loss": 0.9072142839431763,
+ "val_mae_pas": 14.080804824829102,
+ "val_mae_pad": 9.144136428833008,
+ "epochs_run": 9,
+ "seconds": 12.37235689163208,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\mlp_ppg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9861290669329813,
+   "val_loss": 0.9162301421165466,
+   "val_mae_pas_mmHg": 14.138586044311523,
+   "val_mae_pad_mmHg": 9.245121002197266,
+   "grad_norm": 1.064633402033387,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.9679165791685336,
+   "val_loss": 0.9103467464447021,
+   "val_mae_pas_mmHg": 14.15565013885498,
+   "val_mae_pad_mmHg": 9.230741500854492,
+   "grad_norm": 1.0185399562398965,
+   "learning_rate": 0.0009970689785771798
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.9502152948178978,
+   "val_loss": 0.9082475304603577,
+   "val_mae_pas_mmHg": 14.149663925170898,
+   "val_mae_pad_mmHg": 9.217127799987793,
+   "grad_norm": 0.9686443777841942,
+   "learning_rate": 0.0009883102778550433
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.9358717044380224,
+   "val_loss": 0.9072142839431763,
+   "val_mae_pas_mmHg": 14.080804824829102,
+   "val_mae_pad_mmHg": 9.144136428833008,
+   "grad_norm": 0.8857719724144891,
+   "learning_rate": 0.0009738265855914012
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.9172531987462088,
+   "val_loss": 0.9168614149093628,
+   "val_mae_pas_mmHg": 14.07870864868164,
+   "val_mae_pad_mmHg": 9.229104995727539,
+   "grad_norm": 0.8400460378588918,
+   "learning_rate": 0.0009537877098354786
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.9011654224351188,
+   "val_loss": 0.9205333590507507,
+   "val_mae_pas_mmHg": 14.058398246765137,
+   "val_mae_pad_mmHg": 9.18076229095459,
+   "grad_norm": 0.8382983803749084,
+   "learning_rate": 0.0009284285880837946
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.8800039815011426,
+   "val_loss": 0.9138841032981873,
+   "val_mae_pas_mmHg": 14.081950187683105,
+   "val_mae_pad_mmHg": 9.245305061340332,
+   "grad_norm": 0.7772795907526373,
+   "learning_rate": 0.0008980465328528219
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.8587407188437809,
+   "val_loss": 0.9237088561058044,
+   "val_mae_pas_mmHg": 14.180989265441895,
+   "val_mae_pad_mmHg": 9.229780197143555,
+   "grad_norm": 0.7714723440531258,
+   "learning_rate": 0.0008629977459615654
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.8332758189361786,
+   "val_loss": 0.9326697587966919,
+   "val_mae_pas_mmHg": 14.176445960998535,
+   "val_mae_pad_mmHg": 9.250657081604004,
+   "grad_norm": 0.7709561491681036,
+   "learning_rate": 0.0008236931423909139
+  }
+ ]
+}

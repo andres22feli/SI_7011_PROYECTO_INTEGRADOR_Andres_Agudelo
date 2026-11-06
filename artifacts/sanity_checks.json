@@ -1,0 +1,38 @@
+{
+ "build_mlp|ppg": {
+  "init_mse": 0.9449495673179626,
+  "grad_all_finite": true,
+  "grad_zero_layers": [],
+  "grad_n_layers": 11,
+  "overfit_loss": 0.04465125501155853,
+  "overfit_steps": 28,
+  "eval_deterministic": true
+ },
+ "build_gru|ppg": {
+  "init_mse": 0.9449495673179626,
+  "grad_all_finite": true,
+  "grad_zero_layers": [],
+  "grad_n_layers": 10,
+  "overfit_loss": 0.04898884892463684,
+  "overfit_steps": 199,
+  "eval_deterministic": true
+ },
+ "build_mlp|ppg+ecg": {
+  "init_mse": 0.9449495673179626,
+  "grad_all_finite": true,
+  "grad_zero_layers": [],
+  "grad_n_layers": 11,
+  "overfit_loss": 0.04907037317752838,
+  "overfit_steps": 27,
+  "eval_deterministic": true
+ },
+ "build_gru|ppg+ecg": {
+  "init_mse": 0.9449495673179626,
+  "grad_all_finite": true,
+  "grad_zero_layers": [],
+  "grad_n_layers": 10,
+  "overfit_loss": 0.04872891679406166,
+  "overfit_steps": 104,
+  "eval_deterministic": true
+ }
+}

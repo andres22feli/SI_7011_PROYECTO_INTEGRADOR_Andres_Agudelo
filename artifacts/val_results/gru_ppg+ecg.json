@@ -1,0 +1,129 @@
+{
+ "run_name": "gru_ppg+ecg",
+ "builder": "build_gru",
+ "inputs": [
+  "ppg",
+  "ecg"
+ ],
+ "model_kw": {},
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "epochs": 30,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 1024,
+  "amp": false,
+  "micro_batch": null
+ },
+ "best_epoch": 5,
+ "best_val_loss": 0.8608992695808411,
+ "val_mae_pas": 13.317765235900879,
+ "val_mae_pad": 8.817842483520508,
+ "epochs_run": 11,
+ "seconds": 16.153650045394897,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\gru_ppg+ecg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9868935346603394,
+   "val_loss": 0.8766453862190247,
+   "val_mae_pas_mmHg": 13.819066047668457,
+   "val_mae_pad_mmHg": 9.013355255126953,
+   "grad_norm": 0.2998742867504882,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.9167042221421393,
+   "val_loss": 0.8735283017158508,
+   "val_mae_pas_mmHg": 13.786416053771973,
+   "val_mae_pad_mmHg": 9.257575988769531,
+   "grad_norm": 0.6884005922023381,
+   "learning_rate": 0.0009970689785771798
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.8839300533878469,
+   "val_loss": 0.8858925104141235,
+   "val_mae_pas_mmHg": 13.924530982971191,
+   "val_mae_pad_mmHg": 9.286837577819824,
+   "grad_norm": 0.8578867051645974,
+   "learning_rate": 0.0009883102778550433
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.8608968561497804,
+   "val_loss": 0.8642143607139587,
+   "val_mae_pas_mmHg": 13.551294326782227,
+   "val_mae_pad_mmHg": 8.872875213623047,
+   "grad_norm": 0.9267363648548305,
+   "learning_rate": 0.0009738265855914012
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.8329769715527507,
+   "val_loss": 0.863582968711853,
+   "val_mae_pas_mmHg": 13.402569770812988,
+   "val_mae_pad_mmHg": 8.782635688781738,
+   "grad_norm": 1.0835711295916655,
+   "learning_rate": 0.0009537877098354786
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.8094747704323207,
+   "val_loss": 0.8608992695808411,
+   "val_mae_pas_mmHg": 13.317765235900879,
+   "val_mae_pad_mmHg": 8.817842483520508,
+   "grad_norm": 1.1357831576160182,
+   "learning_rate": 0.0009284285880837946
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.7787611409325466,
+   "val_loss": 0.8723106384277344,
+   "val_mae_pas_mmHg": 13.54146671295166,
+   "val_mae_pad_mmHg": 8.894522666931152,
+   "grad_norm": 1.390133425454113,
+   "learning_rate": 0.0008980465328528219
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.7508847501790412,
+   "val_loss": 0.8820247054100037,
+   "val_mae_pas_mmHg": 13.623689651489258,
+   "val_mae_pad_mmHg": 8.96056079864502,
+   "grad_norm": 1.5619215678388827,
+   "learning_rate": 0.0008629977459615654
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.7218092448800524,
+   "val_loss": 0.8683233857154846,
+   "val_mae_pas_mmHg": 13.399747848510742,
+   "val_mae_pad_mmHg": 8.831832885742188,
+   "grad_norm": 1.7771885080315242,
+   "learning_rate": 0.0008236931423909139
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.6967491279138582,
+   "val_loss": 0.8969919085502625,
+   "val_mae_pas_mmHg": 13.66409969329834,
+   "val_mae_pad_mmHg": 9.031553268432617,
+   "grad_norm": 1.6648522214354755,
+   "learning_rate": 0.0007805935326811913
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.6737877349151629,
+   "val_loss": 0.8940351009368896,
+   "val_mae_pas_mmHg": 13.572229385375977,
+   "val_mae_pad_mmHg": 9.106546401977539,
+   "grad_norm": 1.8110393104709197,
+   "learning_rate": 0.0007342042203498951
+  }
+ ]
+}

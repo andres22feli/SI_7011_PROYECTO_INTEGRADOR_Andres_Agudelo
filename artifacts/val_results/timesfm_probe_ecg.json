@@ -1,0 +1,146 @@
+{
+ "run_name": "timesfm_probe_ecg",
+ "builder": "build_probe_head",
+ "inputs": [
+  "ecg"
+ ],
+ "model_kw": {},
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 256,
+  "epochs": 30,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 1024,
+  "amp": false,
+  "micro_batch": null
+ },
+ "best_epoch": 7,
+ "best_val_loss": 0.8922692537307739,
+ "val_mae_pas": 14.083855628967285,
+ "val_mae_pad": 9.020889282226562,
+ "epochs_run": 13,
+ "seconds": 7.787424802780151,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\timesfm_probe_ecg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9748839368329985,
+   "val_loss": 0.9072501063346863,
+   "val_mae_pas_mmHg": 14.099466323852539,
+   "val_mae_pad_mmHg": 9.14155387878418,
+   "grad_norm": 0.9719251619878216,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.948251713102109,
+   "val_loss": 0.894334077835083,
+   "val_mae_pas_mmHg": 14.06983470916748,
+   "val_mae_pad_mmHg": 9.04840087890625,
+   "grad_norm": 1.0684892415443314,
+   "learning_rate": 0.0009970689785771798
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.9402873794609141,
+   "val_loss": 0.8936649560928345,
+   "val_mae_pas_mmHg": 14.084162712097168,
+   "val_mae_pad_mmHg": 9.020282745361328,
+   "grad_norm": 1.121454027490081,
+   "learning_rate": 0.0009883102778550433
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.9322250507702338,
+   "val_loss": 0.8965430855751038,
+   "val_mae_pas_mmHg": 14.05335521697998,
+   "val_mae_pad_mmHg": 9.00993824005127,
+   "grad_norm": 0.9807789398130969,
+   "learning_rate": 0.0009738265855914012
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.9267791470634603,
+   "val_loss": 0.8947659730911255,
+   "val_mae_pas_mmHg": 14.124002456665039,
+   "val_mae_pad_mmHg": 9.014634132385254,
+   "grad_norm": 0.9936126679460578,
+   "learning_rate": 0.0009537877098354786
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.9230153855876387,
+   "val_loss": 0.894775927066803,
+   "val_mae_pas_mmHg": 14.084395408630371,
+   "val_mae_pad_mmHg": 8.990041732788086,
+   "grad_norm": 1.0001210130263711,
+   "learning_rate": 0.0009284285880837946
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.919800509359235,
+   "val_loss": 0.8929198384284973,
+   "val_mae_pas_mmHg": 14.107900619506836,
+   "val_mae_pad_mmHg": 9.015864372253418,
+   "grad_norm": 0.8810981737676068,
+   "learning_rate": 0.0008980465328528219
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.9172187224726811,
+   "val_loss": 0.8922692537307739,
+   "val_mae_pas_mmHg": 14.083855628967285,
+   "val_mae_pad_mmHg": 9.020889282226562,
+   "grad_norm": 0.9623101665594868,
+   "learning_rate": 0.0008629977459615654
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.9144512203252204,
+   "val_loss": 0.8987278342247009,
+   "val_mae_pas_mmHg": 14.096452713012695,
+   "val_mae_pad_mmHg": 8.98453426361084,
+   "grad_norm": 0.986321864562614,
+   "learning_rate": 0.0008236931423909139
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.9112103514582197,
+   "val_loss": 0.8957714438438416,
+   "val_mae_pas_mmHg": 14.088812828063965,
+   "val_mae_pad_mmHg": 9.024519920349121,
+   "grad_norm": 0.8710972917414157,
+   "learning_rate": 0.0007805935326811913
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.9098412110426716,
+   "val_loss": 0.897551953792572,
+   "val_mae_pas_mmHg": 14.085412979125977,
+   "val_mae_pad_mmHg": 8.986188888549805,
+   "grad_norm": 0.9883623050752087,
+   "learning_rate": 0.0007342042203498951
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.9076582594452617,
+   "val_loss": 0.8956208229064941,
+   "val_mae_pas_mmHg": 14.131121635437012,
+   "val_mae_pad_mmHg": 8.99040412902832,
+   "grad_norm": 0.8722278837845704,
+   "learning_rate": 0.0006850690776699572
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.9054203668487406,
+   "val_loss": 0.8939828276634216,
+   "val_mae_pas_mmHg": 14.096696853637695,
+   "val_mae_pad_mmHg": 8.990861892700195,
+   "grad_norm": 0.8052102405334187,
+   "learning_rate": 0.0006337641692646106
+  }
+ ]
+}

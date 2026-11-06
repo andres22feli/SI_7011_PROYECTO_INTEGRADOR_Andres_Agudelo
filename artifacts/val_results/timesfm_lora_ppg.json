@@ -1,0 +1,60 @@
+{
+ "run_name": "timesfm_lora_ppg",
+ "builder": "build_timesfm",
+ "inputs": [
+  "ppg"
+ ],
+ "model_kw": {
+  "mode": "lora"
+ },
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "epochs": 3,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 32,
+  "amp": true,
+  "micro_batch": 16,
+  "head_lr": 0.001,
+  "backbone_lr": 0.0002
+ },
+ "best_epoch": 2,
+ "best_val_loss": 0.7765583395957947,
+ "val_mae_pas": 12.969741821289062,
+ "val_mae_pad": 8.322328567504883,
+ "epochs_run": 3,
+ "seconds": 2879.465270280838,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\timesfm_lora_ppg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.8317164560240284,
+   "val_loss": 0.7907916903495789,
+   "val_mae_pas_mmHg": 13.092328071594238,
+   "val_mae_pad_mmHg": 8.39283561706543,
+   "grad_norm": 1.0640671807471838,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.7824139965645899,
+   "val_loss": 0.7812761068344116,
+   "val_mae_pas_mmHg": 13.026396751403809,
+   "val_mae_pad_mmHg": 8.367814064025879,
+   "grad_norm": 1.234742705092252,
+   "learning_rate": 0.0005
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.7350736397066128,
+   "val_loss": 0.7765583395957947,
+   "val_mae_pas_mmHg": 12.969741821289062,
+   "val_mae_pad_mmHg": 8.322328567504883,
+   "grad_norm": 1.1557119934358329,
+   "learning_rate": 0.0
+  }
+ ]
+}

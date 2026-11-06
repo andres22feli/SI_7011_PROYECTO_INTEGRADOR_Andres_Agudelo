@@ -1,0 +1,86 @@
+{
+ "run_name": "mlp_do0.2_ppg+ecg",
+ "builder": "build_mlp",
+ "inputs": [
+  "ppg",
+  "ecg"
+ ],
+ "model_kw": {
+  "dropout": 0.2
+ },
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "epochs": 30,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 1024,
+  "amp": false,
+  "micro_batch": null
+ },
+ "best_epoch": 0,
+ "best_val_loss": 0.9156877994537354,
+ "val_mae_pas": 14.102884292602539,
+ "val_mae_pad": 9.276886940002441,
+ "epochs_run": 6,
+ "seconds": 8.68528437614441,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\mlp_do0.2_ppg+ecg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9850887310839145,
+   "val_loss": 0.9156877994537354,
+   "val_mae_pas_mmHg": 14.102884292602539,
+   "val_mae_pad_mmHg": 9.276886940002441,
+   "grad_norm": 1.1653886275870777,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.946554766915669,
+   "val_loss": 0.9225110411643982,
+   "val_mae_pas_mmHg": 14.151895523071289,
+   "val_mae_pad_mmHg": 9.345929145812988,
+   "grad_norm": 1.1507115726158998,
+   "learning_rate": 0.0009970689785771798
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.8968851181948296,
+   "val_loss": 0.9286861419677734,
+   "val_mae_pas_mmHg": 14.181879043579102,
+   "val_mae_pad_mmHg": 9.361900329589844,
+   "grad_norm": 1.113990024985554,
+   "learning_rate": 0.0009883102778550433
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.8374278105307962,
+   "val_loss": 0.9530062675476074,
+   "val_mae_pas_mmHg": 14.370678901672363,
+   "val_mae_pad_mmHg": 9.407981872558594,
+   "grad_norm": 1.051490306854248,
+   "learning_rate": 0.0009738265855914012
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.7699322107239305,
+   "val_loss": 0.9911452531814575,
+   "val_mae_pas_mmHg": 14.471138000488281,
+   "val_mae_pad_mmHg": 9.681709289550781,
+   "grad_norm": 1.0350727842789944,
+   "learning_rate": 0.0009537877098354786
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.6956875008121829,
+   "val_loss": 1.0293177366256714,
+   "val_mae_pas_mmHg": 14.794591903686523,
+   "val_mae_pad_mmHg": 9.702232360839844,
+   "grad_norm": 1.0147914633015607,
+   "learning_rate": 0.0009284285880837946
+  }
+ ]
+}

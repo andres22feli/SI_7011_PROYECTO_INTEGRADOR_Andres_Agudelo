@@ -1,0 +1,94 @@
+{
+ "run_name": "mlp_do0.2_ecg",
+ "builder": "build_mlp",
+ "inputs": [
+  "ecg"
+ ],
+ "model_kw": {
+  "dropout": 0.2
+ },
+ "cfg": {
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "epochs": 30,
+  "patience": 5,
+  "clip": 1.0,
+  "seed": 0,
+  "eval_batch_size": 1024,
+  "amp": false,
+  "micro_batch": null
+ },
+ "best_epoch": 1,
+ "best_val_loss": 0.9370535016059875,
+ "val_mae_pas": 14.236188888549805,
+ "val_mae_pad": 9.561135292053223,
+ "epochs_run": 7,
+ "seconds": 10.108392238616943,
+ "checkpoint": "C:\\Users\\USUARIO\\Documents\\Source\\dl_bp_mimic_proyecto_integrador\\artifacts\\checkpoints\\mlp_do0.2_ecg.pt",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9968016066840876,
+   "val_loss": 0.9388426542282104,
+   "val_mae_pas_mmHg": 14.141953468322754,
+   "val_mae_pad_mmHg": 9.518221855163574,
+   "grad_norm": 1.1574166698433528,
+   "learning_rate": 0.001
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.959513726635514,
+   "val_loss": 0.9370535016059875,
+   "val_mae_pas_mmHg": 14.236188888549805,
+   "val_mae_pad_mmHg": 9.561135292053223,
+   "grad_norm": 1.1975560238428204,
+   "learning_rate": 0.0009970689785771798
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.8670032280627812,
+   "val_loss": 0.9766054749488831,
+   "val_mae_pas_mmHg": 14.514404296875,
+   "val_mae_pad_mmHg": 9.78994083404541,
+   "grad_norm": 1.256489214774604,
+   "learning_rate": 0.0009883102778550433
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.7307488742832825,
+   "val_loss": 1.0499043464660645,
+   "val_mae_pas_mmHg": 14.964201927185059,
+   "val_mae_pad_mmHg": 10.10634994506836,
+   "grad_norm": 1.2764600429022424,
+   "learning_rate": 0.0009738265855914012
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.590050319366366,
+   "val_loss": 1.0719025135040283,
+   "val_mae_pas_mmHg": 14.939544677734375,
+   "val_mae_pad_mmHg": 10.244893074035645,
+   "grad_norm": 1.2286042429019357,
+   "learning_rate": 0.0009537877098354786
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.4828971522712262,
+   "val_loss": 1.1232001781463623,
+   "val_mae_pas_mmHg": 15.327600479125977,
+   "val_mae_pad_mmHg": 10.364767074584961,
+   "grad_norm": 1.1428649765308772,
+   "learning_rate": 0.0009284285880837946
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.416996746280483,
+   "val_loss": 1.1128246784210205,
+   "val_mae_pas_mmHg": 15.342687606811523,
+   "val_mae_pad_mmHg": 10.311802864074707,
+   "grad_norm": 1.0545603426817423,
+   "learning_rate": 0.0008980465328528219
+  }
+ ]
+}
