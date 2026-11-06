@@ -1,3 +1,5 @@
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andres22feli/SI_7011_PROYECTO_INTEGRADOR_Andres_Agudelo/blob/main/notebooks/proyecto_completo.ipynb)
+
 # Estimación de PAS/PAD desde PPG y ECG (MIMIC-BP) — SI7011
 
 Diseño factorial **3 entradas (PPG, ECG, PPG+ECG) × 3 arquitecturas (MLP, GRU, TimesFM 2.5)** con la misma partición por paciente
@@ -10,8 +12,11 @@ anteproyecto: [Anteproyecto_DL_Presion_Arterial_Andres_Agudelo.pdf](Anteproyecto
 conda env create -f environment.yml          # o: conda create -n dl_bp python=3.11 + pip install (ver environment.yml)
 conda activate dl_bp
 pytest tests -q
-jupyter nbconvert --to notebook --execute --inplace notebooks/0{1,2,3,4,5,6}_*.ipynb   # en orden
+jupyter nbconvert --to notebook --execute --inplace notebooks/proyecto_completo.ipynb
 ```
+
+**En Google Colab:** pulsa el botón de arriba, activa la GPU (T4) y ejecuta las partes en orden. Los datos y el caché se leen de
+`Mi unidad/dl_bp/{data,cache}` en Drive (la Parte 0 clona el repo, monta Drive y enlaza esas carpetas).
 
 Los datos van en `data/{ppg,ecg,abp,labels}/` (DOI 10.7910/DVN/DBM1NF). ABP **no** se usa como entrada: de ahí salen las etiquetas.
 
@@ -26,7 +31,7 @@ Los datos van en `data/{ppg,ecg,abp,labels}/` (DOI 10.7910/DVN/DBM1NF). ABP **no
 | `src/bp/train.py` | AdamW + warmup/coseno por lote + clipping + early stopping + MLflow + chequeos previos |
 | `src/bp/metrics.py` | MAE, ME, DE por paciente y agrupados |
 | `src/bp/predict.py` | Bundle portable y `predict_raw` |
-| `notebooks/01…06` | Datos → chequeos → MLP → GRU → TimesFM → reporte y `predict_raw` |
+| `notebooks/proyecto_completo.ipynb` | Notebook único, por partes: datos → chequeos → MLP → GRU → TimesFM → reporte y `predict_raw` |
 | `artifacts/` | `data_card.json`, `label_stats.json`, `val_results/`, `test_results.json`, `tabla_3x3.*`, `best_model_bundle.pt`, figuras |
 | `mlflow.db` | Corridas (`mlflow ui --backend-store-uri sqlite:///mlflow.db`) |
 
